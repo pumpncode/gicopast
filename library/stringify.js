@@ -60,8 +60,12 @@ const formatKeyValue = (key, value) => {
  * @param {{name: string[], values: Record<string, string>}[]} object - The parsed Git config object
  * @returns {string} The formatted Git config string
  * @example
- * stringify([{ name: ['user'], values: { name: 'John Doe', email: 'john@example.com' } }]);
- * // Returns: '[user]\n\tname = John Doe\n\temail = john@example.com\n'
+ * ```js
+ * stringify([{ name: ["user"], values: { name: "John Doe", email: "john@example.com" } }]);
+ * // Returns: `[user]
+ * 	name = John Doe
+ * 	email = john@example.com`
+ * ```
  */
 const stringify = (object) => {
 	if (!Array.isArray(object)) {

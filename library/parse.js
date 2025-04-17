@@ -10,8 +10,14 @@ import {
  * @param {string} text - The git config file content to parse
  * @returns {{name: string[], values: Record<string, string>}[]} An array of sections with their values
  * @example
- * parse('[user]\n  name = John Doe\n  email = john@example.com');
+ * ```js
+ * parse(`
+ * [user]
+ * 	name = John Doe
+ * 	email = john@example.com
+ * `);
  * // Returns: [{ name: ['user'], values: { name: 'John Doe', email: 'john@example.com' }}]
+ * ```
  */
 const parse = (text) => {
 	// State variables for parsing
