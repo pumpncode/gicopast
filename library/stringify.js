@@ -63,8 +63,8 @@ const formatKeyValue = (key, value) => {
  * ```js
  * stringify([{ name: ["user"], values: { name: "John Doe", email: "john@example.com" } }]);
  * // Returns: `[user]
- * 	name = John Doe
- * 	email = john@example.com`
+ * // 	name = John Doe
+ * // 	email = john@example.com`
  * ```
  */
 const stringify = (object) => {
