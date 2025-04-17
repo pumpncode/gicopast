@@ -1,4 +1,6 @@
 {
+	"name": "@pumpn/gicopast",
+	"version": "0.1.0",
 	"tasks": {
 		"initialize": "deno run -R -W --allow-run=npm ./scripts/initialize.js",
 		"upkeep": "deno run --allow-run=npx jsr:@pumpn/upkeep",
